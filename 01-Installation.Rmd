@@ -11,19 +11,19 @@ shiny::runGitHub(
 
 ...which will point R to [https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example](https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example), download the app there (a neat example that visualizes US demographic data), and run it in your session of RStudio.
 
-### Install R
+## Install R
 
 Clearly, you're going to need R installed! Depending on your OS, follow the instructions below to install R:
 
-#### **Mac OS X**:
+### **Mac OS X**:
 Download and install the .pkg file for the latest version of R found [here](https://cran.r-project.org/bin/macosx/) double-click it to install R.
 
-#### **Windows**:
+### **Windows**:
 1. Download the installer .exe file found [here](https://cran.r-project.org/bin/windows/base/) and double-click it to install R.
 
 2. You'll also need **Rtools**. Download the .exe file found [here](https://cran.r-project.org/bin/windows/Rtools/) and double-click it to install Rtools. Best to stick with the recommended version.
 
-#### **Ubuntu**:
+### **Ubuntu**:
 
 *If you're using a different Linux distro, it's assumed that you know what you're doing -- have at it* :)
 
