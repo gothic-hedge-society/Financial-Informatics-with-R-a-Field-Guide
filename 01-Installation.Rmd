@@ -1,0 +1,99 @@
+# Installation
+
+**When you've completed the steps in this section**, and if everything installed correctly, you should be able to run the command: 
+```
+shiny::runGitHub(
+  repo     = "shiny-examples",
+  username = "rstudio",
+  subdir   = "063-superzip-example"
+)
+```
+
+...which will point R to [https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example](https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example), download the app there (a neat example that visualizes US demographic data), and run it in your session of RStudio.
+
+### Install R
+
+Clearly, you're going to need R installed! Depending on your OS, follow the instructions below to install R:
+
+#### **Mac OS X**:
+Download and install the .pkg file for the latest version of R found [here](https://cran.r-project.org/bin/macosx/) double-click it to install R.
+
+#### **Windows**:
+1. Download the installer .exe file found [here](https://cran.r-project.org/bin/windows/base/) and double-click it to install R.
+
+2. You'll also need **Rtools**. Download the .exe file found [here](https://cran.r-project.org/bin/windows/Rtools/) and double-click it to install Rtools. Best to stick with the recommended version.
+
+#### **Ubuntu**:
+
+*If you're using a different Linux distro, it's assumed that you know what you're doing -- have at it* :)
+
+We're going to add the [CRAN Project](https://cran.r-project.org/) repository to your system's sources list, run `apt update`, and then install R, plus the development package `r-devel`, from the CRAN repo. To do this, open a terminal and go through the following steps:
+
+1. Add the repo's GPG key.
+```
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+```
+
+2. Add the repository to your sources list. If you're not using Ubuntu 18 (Bionic Beaver), don't forget to change "`bionic`" to your version's name in the command below. Allowed choices can be found [here](https://cloud.r-project.org/bin/linux/ubuntu/).
+```
+sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/'
+```
+
+3. `sudo apt update`. Successful output confirms that the repo has been added; something like:
+```
+Hit:2 https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/ InRelease
+```
+
+4. Install R with: `sudo apt install r-base r-devel`
+
+5. Check that all's well. The command `sudo -i R` should print out information about your R install and should look something like this:
+```
+R version 3.6.0 (2019-04-26) -- "Planting of a Tree"
+Copyright (C) 2019 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+```
+
+### Install RStudio
+
+RStudio is the industry standard interactive development environment (IDE) for R, developed and maintained by a [company of the same name](https://www.rstudio.com/).
+
+Install RStudio by downloading and running the installer that matches your OS found [here](https://www.rstudio.com/).
+
+### Install R Packages
+
+Open up RStudio and run the command below to install the packges listed:
+```
+install.packages(c("devtools", "tidyverse", "roxygen2", "testthat", "knitr", "pkgdown", "shiny", "DT", "dygraphs", "plotly", "xts"))
+```
+Go get a coffee because this will probably take a few minutes.
+
+### Restart your computer
+
+Optional, but your computer works hard for you. Give it a break and let it restart. At the very least, exit RStudio.
+
+### Check that all's well
+Run an example app hosted on GitHub. If it works, everything installed correctly:
+```
+shiny::runGitHub(
+  repo     = "shiny-examples",
+  username = "rstudio",
+  subdir   = "063-superzip-example"
+)
+```
+
+## Setup
+

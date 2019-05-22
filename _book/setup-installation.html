@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 Setup &amp; Installation | Financial Informatics with R: A Field Guide</title>
+  <meta name="description" content="This book was written to support the course ECON 590.10: Financial Informatics at Duke University." />
+  <meta name="generator" content="bookdown 0.10 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 Setup &amp; Installation | Financial Informatics with R: A Field Guide" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This book was written to support the course ECON 590.10: Financial Informatics at Duke University." />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 Setup &amp; Installation | Financial Informatics with R: A Field Guide" />
+  
+  <meta name="twitter:description" content="This book was written to support the course ECON 590.10: Financial Informatics at Duke University." />
+  
+
+<meta name="author" content="Jake Vestal" />
+
+
+<meta name="date" content="2019-05-22" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html">
+<link rel="next" href="literature.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+div.sourceCode { overflow-x: auto; }
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; line-height: 100%; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; color: #aaaaaa; border-right: 1px solid #aaaaaa; }
+td.sourceCode { padding-left: 5px; }
+code > span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code > span.dt { color: #902000; } /* DataType */
+code > span.dv { color: #40a070; } /* DecVal */
+code > span.bn { color: #40a070; } /* BaseN */
+code > span.fl { color: #40a070; } /* Float */
+code > span.ch { color: #4070a0; } /* Char */
+code > span.st { color: #4070a0; } /* String */
+code > span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code > span.ot { color: #007020; } /* Other */
+code > span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code > span.fu { color: #06287e; } /* Function */
+code > span.er { color: #ff0000; font-weight: bold; } /* Error */
+code > span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+code > span.cn { color: #880000; } /* Constant */
+code > span.sc { color: #4070a0; } /* SpecialChar */
+code > span.vs { color: #4070a0; } /* VerbatimString */
+code > span.ss { color: #bb6688; } /* SpecialString */
+code > span.im { } /* Import */
+code > span.va { color: #19177c; } /* Variable */
+code > span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code > span.op { color: #666666; } /* Operator */
+code > span.bu { } /* BuiltIn */
+code > span.ex { } /* Extension */
+code > span.pp { color: #bc7a00; } /* Preprocessor */
+code > span.at { color: #7d9029; } /* Attribute */
+code > span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code > span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code > span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code > span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">A Minimal Book Example</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Prerequisites</a></li>
+<li class="chapter" data-level="2" data-path="setup-installation.html"><a href="setup-installation.html"><i class="fa fa-check"></i><b>2</b> Setup &amp; Installation</a><ul>
+<li class="chapter" data-level="2.1" data-path="setup-installation.html"><a href="setup-installation.html#installation"><i class="fa fa-check"></i><b>2.1</b> Installation</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="setup-installation.html"><a href="setup-installation.html#install-r"><i class="fa fa-check"></i><b>2.1.1</b> Install R</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="setup-installation.html"><a href="setup-installation.html#setup"><i class="fa fa-check"></i><b>2.2</b> Setup</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="literature.html"><a href="literature.html"><i class="fa fa-check"></i><b>3</b> Literature</a></li>
+<li class="chapter" data-level="4" data-path="methods.html"><a href="methods.html"><i class="fa fa-check"></i><b>4</b> Methods</a></li>
+<li class="chapter" data-level="5" data-path="applications.html"><a href="applications.html"><i class="fa fa-check"></i><b>5</b> Applications</a><ul>
+<li class="chapter" data-level="5.1" data-path="applications.html"><a href="applications.html#example-one"><i class="fa fa-check"></i><b>5.1</b> Example one</a></li>
+<li class="chapter" data-level="5.2" data-path="applications.html"><a href="applications.html#example-two"><i class="fa fa-check"></i><b>5.2</b> Example two</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="final-words.html"><a href="final-words.html"><i class="fa fa-check"></i><b>6</b> Final Words</a></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Financial Informatics with R: A Field Guide</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="setup-installation" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> Setup &amp; Installation</h1>
+<p><strong>When you’ve completed the steps in this section</strong>, and if everything installed correctly, you should be able to run the command</p>
+<div id="installation" class="section level2">
+<h2><span class="header-section-number">2.1</span> Installation</h2>
+<p><strong>When you’ve completed the steps in this section</strong>, and if everything installed correctly, you should be able to run the command :</p>
+<pre><code>shiny::runGitHub(
+  repo     = &quot;shiny-examples&quot;,
+  username = &quot;rstudio&quot;,
+  subdir   = &quot;063-superzip-example&quot;
+)</code></pre>
+<p>which will point R to <a href="https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example" class="uri">https://github.com/rstudio/shiny-examples/tree/master/063-superzip-example</a>, download the app there (a neat example that visualizes US demographic data), and run it in your session of RStudio.</p>
+<div id="install-r" class="section level3">
+<h3><span class="header-section-number">2.1.1</span> Install R</h3>
+<p>Clearly, you’re going to need R installed! Depending on your OS, follow the instructions below to install R:</p>
+<div id="mac-os-x" class="section level4">
+<h4><span class="header-section-number">2.1.1.1</span> <strong>Mac OS X</strong></h4>
+<p>Download and install the .pkg file for the latest version of R found <a href="https://cran.r-project.org/bin/macosx/">here</a> double-click it to install R.</p>
+</div>
+<div id="windows" class="section level4">
+<h4><span class="header-section-number">2.1.1.2</span> <strong>Windows</strong></h4>
+<ol style="list-style-type: decimal">
+<li><p>Download the installer .exe file found <a href="https://cran.r-project.org/bin/windows/base/">here</a> and double-click it to install R.</p></li>
+<li><p>You’ll also need <strong>Rtools</strong>. Download the .exe file found <a href="https://cran.r-project.org/bin/windows/Rtools/">here</a> and double-click it to install Rtools. Best to stick with the recommended version.</p></li>
+</ol>
+</div>
+<div id="ubuntu" class="section level4">
+<h4><span class="header-section-number">2.1.1.3</span> <strong>Ubuntu</strong>:</h4>
+<p><em>If you’re using a different Linux distro, it’s assumed that you know what you’re doing – have at it</em> :)</p>
+<p>We’re going to add the <a href="https://cran.r-project.org/">CRAN Project</a> repository to your system’s sources list, run <code>apt update</code>, and then install R, plus the development package <code>r-devel</code>, from the CRAN repo. To do this, open a terminal and go through the following steps:</p>
+<ol style="list-style-type: decimal">
+<li><p>Add the repo’s GPG key.</p>
+<pre><code>sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9</code></pre></li>
+<li><p>Add the repository to your sources list. If you’re not using Ubuntu 18 (Bionic Beaver), don’t forget to change “<code>bionic</code>” to your version’s name in the command below. Allowed choices can be found <a href="https://cloud.r-project.org/bin/linux/ubuntu/">here</a>.</p>
+<pre><code>sudo add-apt-repository &#39;deb https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/&#39;</code></pre></li>
+<li><p><code>sudo apt update</code>. Successful output confirms that the repo has been added; something like:</p>
+<pre><code>Hit:2 https://cloud.r-project.org/bin/linux/ubuntu bionic-cran35/ InRelease</code></pre></li>
+<li><p>Install R with: <code>sudo apt install r-base r-devel</code></p></li>
+<li><p>Check that all’s well. The command <code>sudo -i R</code> should print out information about your R install and should look something like this: ``` R version 3.6.0 (2019-04-26) – “Planting of a Tree” Copyright (C) 2019 The R Foundation for Statistical Computing Platform: x86_64-pc-linux-gnu (64-bit)</p></li>
+</ol>
+<p>R is free software and comes with ABSOLUTELY NO WARRANTY. You are welcome to redistribute it under certain conditions. Type ‘license()’ or ‘licence()’ for distribution details.</p>
+<p>Natural language support but running in an English locale</p>
+<p>R is a collaborative project with many contributors. Type ‘contributors()’ for more information and ‘citation()’ on how to cite R or R packages in publications.</p>
+<p>Type ‘demo()’ for some demos, ‘help()’ for on-line help, or ‘help.start()’ for an HTML browser interface to help. Type ‘q()’ to quit R.</p>
+<pre><code>
+### Install RStudio
+
+RStudio is the industry standard interactive development environment (IDE) for R, developed and maintained by a [company of the same name](https://www.rstudio.com/).
+
+Install RStudio by downloading and running the installer that matches your OS found [here](https://www.rstudio.com/).
+
+### Install R Packages
+
+Open up RStudio and run the command below to install the packges listed:</code></pre>
+<p>install.packages(c(“devtools”, “tidyverse”, “roxygen2”, “testthat”, “knitr”, “pkgdown”, “shiny”, “DT”, “dygraphs”, “plotly”, “xts”))</p>
+<pre><code>Go get a coffee because this will probably take a few minutes.
+
+### Restart your computer
+
+Optional, but your computer works hard for you. Give it a break and let it restart. At the very least, exit RStudio.
+
+### Check that all&#39;s well
+Run an example app hosted on GitHub. If it works, everything installed correctly:</code></pre>
+<p>shiny::runGitHub( repo = “shiny-examples”, username = “rstudio”, subdir = “063-superzip-example” ) ```</p>
+</div>
+</div>
+</div>
+<div id="setup" class="section level2">
+<h2><span class="header-section-number">2.2</span> Setup</h2>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="literature.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"download": ["Financial Informatics with R - A Field Guide.pdf", "Financial Informatics with R - A Field Guide.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:" && /^https?:/.test(src))
+      src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>
